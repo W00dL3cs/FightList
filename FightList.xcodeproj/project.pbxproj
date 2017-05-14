@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA7867A61E95015300D6EA9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7867A51E95015300D6EA9E /* Foundation.framework */; };
+		FA7867B11E95015300D6EA9E /* FightList.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA7867B01E95015300D6EA9E /* FightList.mm */; };
+		FA7867BC1E95017C00D6EA9E /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7867BB1E95017C00D6EA9E /* libsubstrate.dylib */; };
+		FA7867C31E96455C00D6EA9E /* Trampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7867C11E96455C00D6EA9E /* Trampoline.h */; };
+		FA7867C41E96455C00D6EA9E /* Trampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7867C21E96455C00D6EA9E /* Trampoline.m */; };
+		FA7867C61E964CA500D6EA9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7867C51E964CA500D6EA9E /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA7867A21E95015300D6EA9E /* FightList.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FightList.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7867A51E95015300D6EA9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA7867AA1E95015300D6EA9E /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FA7867AB1E95015300D6EA9E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FA7867AD1E95015300D6EA9E /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FA7867AE1E95015300D6EA9E /* FightList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FightList-Prefix.pch"; sourceTree = "<group>"; };
+		FA7867AF1E95015300D6EA9E /* FightList.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FightList.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FA7867B01E95015300D6EA9E /* FightList.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FightList.mm; sourceTree = "<group>"; };
+		FA7867B51E95015300D6EA9E /* FightList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FightList.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/FightList.plist; sourceTree = "<group>"; };
+		FA7867BB1E95017C00D6EA9E /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		FA7867C11E96455C00D6EA9E /* Trampoline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trampoline.h; sourceTree = "<group>"; };
+		FA7867C21E96455C00D6EA9E /* Trampoline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trampoline.m; sourceTree = "<group>"; };
+		FA7867C51E964CA500D6EA9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA78679E1E95015300D6EA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7867C61E964CA500D6EA9E /* UIKit.framework in Frameworks */,
+				FA7867BC1E95017C00D6EA9E /* libsubstrate.dylib in Frameworks */,
+				FA7867A61E95015300D6EA9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7867971E95015300D6EA9E = {
+			isa = PBXGroup;
+			children = (
+				FA7867A71E95015300D6EA9E /* FightList */,
+				FA7867A41E95015300D6EA9E /* Frameworks */,
+				FA7867A31E95015300D6EA9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7867A31E95015300D6EA9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867A21E95015300D6EA9E /* FightList.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7867A41E95015300D6EA9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867C51E964CA500D6EA9E /* UIKit.framework */,
+				FA7867BB1E95017C00D6EA9E /* libsubstrate.dylib */,
+				FA7867A51E95015300D6EA9E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7867A71E95015300D6EA9E /* FightList */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867AF1E95015300D6EA9E /* FightList.xm */,
+				FA7867B01E95015300D6EA9E /* FightList.mm */,
+				FA7867A81E95015300D6EA9E /* Package */,
+				FA7867AC1E95015300D6EA9E /* Supporting Files */,
+				FA7867C11E96455C00D6EA9E /* Trampoline.h */,
+				FA7867C21E96455C00D6EA9E /* Trampoline.m */,
+			);
+			path = FightList;
+			sourceTree = "<group>";
+		};
+		FA7867A81E95015300D6EA9E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867A91E95015300D6EA9E /* DEBIAN */,
+				FA7867B21E95015300D6EA9E /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FA7867A91E95015300D6EA9E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867AA1E95015300D6EA9E /* control.txt */,
+				FA7867AB1E95015300D6EA9E /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FA7867AC1E95015300D6EA9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867AD1E95015300D6EA9E /* PackageVersion.plist */,
+				FA7867AE1E95015300D6EA9E /* FightList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7867B21E95015300D6EA9E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867B31E95015300D6EA9E /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FA7867B31E95015300D6EA9E /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867B41E95015300D6EA9E /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		FA7867B41E95015300D6EA9E /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA7867B51E95015300D6EA9E /* FightList.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA78679F1E95015300D6EA9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7867C31E96455C00D6EA9E /* Trampoline.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA7867A11E95015300D6EA9E /* FightList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7867B81E95015300D6EA9E /* Build configuration list for PBXNativeTarget "FightList" */;
+			buildPhases = (
+				FA78679C1E95015300D6EA9E /* ShellScript */,
+				FA78679D1E95015300D6EA9E /* Sources */,
+				FA78679E1E95015300D6EA9E /* Frameworks */,
+				FA78679F1E95015300D6EA9E /* Headers */,
+				FA7867A01E95015300D6EA9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FightList;
+			productName = FightList;
+			productReference = FA7867A21E95015300D6EA9E /* FightList.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7867981E95015300D6EA9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					FA7867A11E95015300D6EA9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA78679B1E95015300D6EA9E /* Build configuration list for PBXProject "FightList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA7867971E95015300D6EA9E;
+			productRefGroup = FA7867A31E95015300D6EA9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7867A11E95015300D6EA9E /* FightList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA78679C1E95015300D6EA9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		FA7867A01E95015300D6EA9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA78679D1E95015300D6EA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7867B11E95015300D6EA9E /* FightList.mm in Sources */,
+				FA7867C41E96455C00D6EA9E /* Trampoline.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA7867B61E95015300D6EA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FA7867B71E95015300D6EA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FA7867B91E95015300D6EA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FightList/FightList-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 10.20.48.19;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FA7867BA1E95015300D6EA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FightList/FightList-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 10.20.48.19;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA78679B1E95015300D6EA9E /* Build configuration list for PBXProject "FightList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7867B61E95015300D6EA9E /* Debug */,
+				FA7867B71E95015300D6EA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7867B81E95015300D6EA9E /* Build configuration list for PBXNativeTarget "FightList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7867B91E95015300D6EA9E /* Debug */,
+				FA7867BA1E95015300D6EA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA7867981E95015300D6EA9E /* Project object */;
+}
